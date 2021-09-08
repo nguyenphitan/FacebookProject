@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 56px;
+    align-items: center;        /* đưa các item ra giữa container */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 0 0 rgb(214, 211, 211);
+    background-color: white;
+    /* position: fixed;
+    top: 0; */
+}
+
+.left, .right, .center {
+    display: flex;
+}
+
+/* left */
+.left {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.left .fa-facebook {
+    font-size: 40px;
+    color: #3578E5;
+    margin-left: 3%;
+}
+
+.left input {
+    height: 40px;
+    width: 56%;
+    margin-left: 2%;
+    font-size: 14px;
+    box-sizing: border-box;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    border: none;
+    background-color: #f0f2f5;
+}
+
+/* center */
+.center {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+}
+
+.center .list {
+    position: relative;
+    width: 20%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center .list:hover {
+    background-color: #f5f1f1e8;
+    border-radius: 14%;
+}
+
+
+/* right */
+.right {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.rightItem {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 2%;
+    background-color: #e4e6eb;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightItem:hover {
+    background-color: #CCCCCC;
+}
+
+.rightItem i {
+    font-size: 20px;
+}
+
+.right .avatar {
+    width: 70px;
+    height: 38px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7f3ff;
+    padding-right: 5px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.avatar img {
+    margin-right: 2px;
+}
+
+
+/* About */
+
+.allAbout {
+    width: 100%;
+    background-color: white;
+}
+
+.about {
+    width: 62%;
+    margin: 0 19%;
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+
+/* Background */
+.info .infoBackground {
+    background-color: #f0f2f5;
+    width: 100%;
+    padding-top: 348.14px;
+    position: relative;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.infoBackground .addImg {
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    background-color: white;
+    height: 36px;
+    padding: 0 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.infoBackground .addImg:hover {
+    cursor: pointer;
+}
+
+.infoBackground .addImg i {
+    margin-right: 6px;
+}
+
+/* Avatar */
+.infoAvatar {
+    position: absolute;
+    bottom: -30%;
+}
+
+.infoAvatar .imgAvatar {
+    background-color: white;
+    width: 178px;
+    height: 178px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.infoAvatar .imgAvatar img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.infoAvatar .infoName a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1877f2;
+}
+
+/* List About */
+.listAbout {
+    width: 90%;
+    margin: auto;
+}
+
+.listAbout .path {
+    height: 1px;
+    width: 100%;
+    margin-top: 114px;
+    background-color: #b5b6b8;
+}
+
+.listAbout .listItem {
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+.listAbout .listItem div {
+    width: auto;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: relative;
+}
+
+.listAbout .listItem .line1, .listAbout .listItem .line2, .listAbout .listItem .line3,
+.listAbout .listItem .line4, .listAbout .listItem .line5 {
+    height: 50px;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+}
+
+.listAbout .listItem .line1:hover, .listAbout .listItem .line2:hover, .listAbout .listItem .line3:hover,
+.listAbout .listItem .line4:hover, .listAbout .listItem .line5:hover {
+    background-color: #1877f2;
+    height: 2px;
+}
+
+.listAbout .listItem div:hover {
+    background-color: #f5f1f1e8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.listAbout .listItem .item3 span {
+    padding: 0;
+    font-size: 12px;
+}
+
+.listAbout .listItem .addStory {
+    height: 34px;
+    margin: 13px 0;
+    background-color: #1877f2;
+    color: white;
+    border-radius: 10px;
+}
+
+.listAbout .listItem .addStory:hover {
+    background-color: #1876f2d3;
+}
+
+.listAbout .listItem .setting {
+    height: 34px;
+    margin: 13px 0;
+    background-color: #e4e6eb;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.listAbout .listItem .something {
+    width: 30px;
+    height: 34px;
+    margin: 13px 0;
+    background-color: #e4e6eb;
+    border-radius: 10px;
+}
+
+.listAbout .listItem .something:hover , .listAbout .listItem .setting:hover {
+    background-color: #CCCCCC;
+}
+
+
+/* Container */
+.container {
+    width: 60%;
+    margin: 1% 20%;
+    height: 500px;
+    display: flex;
+}
+
+.contentLeft {
+    width: 40%;
+    background-color: white;
+}
+
+.contentRight {
+    width: 56%;
+    margin-left: 2%;
+}
+
+.contentRight .content1 {
+    width: 100%;
+    height: 124px;
+    background-color: white;
+    margin-bottom: 4%;
+}
+
+.contentRight .content2 {
+    width: 100%;
+    height: 114px;
+    background-color: white;
+    margin-bottom: 4%;
+}
+
+.contentRight .content3, .contentRight .content4, .contentRight .content5 {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin-bottom: 4%;
+}
+
+
